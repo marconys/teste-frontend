@@ -106,12 +106,13 @@
         <div class="card-form">
           <h2>Mande uma mensagem:</h2>
           <form action="" class="form-mensage">
-            <input type="text" id="cpf" maxlength="14" placeholder="Digite seu CPF" />
             <input
               type="text"
-              id="phone"
-              placeholder="Digite Seu telefone"
+              id="cpf"
+              maxlength="14"
+              placeholder="Digite seu CPF"
             />
+            <input type="text" id="phone" placeholder="Digite Seu telefone" />
             <textarea
               name="menssage"
               id="menssage"
@@ -122,22 +123,60 @@
         </div>
         <!-- fim card-form -->
 
+        <!-- início  card-regra3-->
         <div class="card-regra3">
           <h2>Regra de 3</h2>
-          <form action="">
+          <form action="" class="form-regra3">
             <div class="input-group1">
-                <input type="text" name="" id="" placeholder="60">
-                <span id="space"></span>
-                <input type="text" name="" id="" placeholder="100">
+              <input type="text" name="" id="value1" placeholder="60" />
+              <span id="space"></span>
+              <input type="text" name="" id="value2" placeholder="100" />
             </div>
             <div class="input-group1">
-                <input type="text" name="" id="" placeholder="60">
-                <span id="space"></span>
-                <input type="text" name="" id="" placeholder="100">
+              <input type="text" name="" id="value3" placeholder="30" />
+              <span id="space"></span>
+              <input type="text" name="" id="value4" disabled />
             </div>
-            <button class="calcular">Calcular</button>
+            <button class="btn-calcular">Calcular</button>
           </form>
         </div>
+        <!-- fim  card-regra3-->
+
+        <!-- início card-show-image -->
+        <div class="card-show-image">
+          <div class="bg-image-house">
+            <img src="img/house.jpg" alt="House Image" />
+          </div>
+          <button class="btn-image-modal">Abrir imagem no modal</button>
+        </div>
+        <!-- fim card-show-image -->
+
+        <!-- inicio Modal -->
+        <div id="imageModal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="img/house.jpg" alt="House Image in Modal" />
+          </div>
+        </div>
+        <!-- fim Modal-->
+
+        <!-- início card-download-image -->
+        <div class="card-download-image">
+          <div class="bg-image-house" id="capture-area">
+            <img src="img/house.jpg" alt="House Image" />
+            <button class="btn-imovel-guide">Imóvel Guide</button>
+          </div>
+          <button class="btn-download-image" id="download-btn">Download</button>
+        </div>
+        <!-- fim card-download-image -->
+
+        <!-- início card-show-image -->
+        <div class="card-image">
+          <div class="bg-image-house">
+            <img src="img/house.jpg" alt="House Image" class="zoom-image"/>
+          </div>
+        </div>
+        <!-- fim card-show-image -->
       </div>
     </section>
     <!-- fim section content -->
@@ -153,7 +192,7 @@
       </div>
 
       <div class="rodape-right">
-        &copy;Copyright 2022.&nbsp;Todos os direitos reservados.
+        <span>&copy;Copyright 2022.&nbsp;Todos os direitos reservados.</span>
         <a href="index.html">
           <img src="img/logo.webp" alt="logo" />
         </a>
@@ -165,5 +204,10 @@
     <script src="js/btn_hamburger.js"></script>
     <script src="js/show_phone.js"></script>
     <script src="js/mask.js"></script>
+    <script src="js/regra3.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/capture.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
   </body>
 </html>

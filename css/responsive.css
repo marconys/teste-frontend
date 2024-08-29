@@ -1,0 +1,158 @@
+@import url('custom.css');
+
+/* início navbar responsive tablets*/
+@media (max-width: 1024px) {
+
+    .menu-left,
+    .menu-right,
+    .btn-menu-right {
+        display: none;
+    }
+
+    .menu-reponsive {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        padding-top: 50px;
+        top: 50px;
+        right: -50%;
+        text-align: center;
+        background: var(--secundary-color);
+        transition: 0.6s ease-in-out;
+        height: 70px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .active .menu-reponsive {
+        right: 0;
+        align-items: center;
+        text-align: center;
+        height: calc(45vh - 70px);
+        visibility: visible;
+    }
+
+    .primmary-menu {
+        margin-bottom: 20px;
+    }
+
+    .primmary-menu li {
+        list-style: nome;
+        cursor: pointer;
+        padding-top: 0px;
+        display: block;
+        color: var(--light-color);
+        font-weight: 600;
+    }
+
+    .secundary-manu {
+        margin-bottom: 20px;
+    }
+
+    .secundary-manu li {
+        list-style: nome;
+        cursor: pointer;
+        padding-top: 0px;
+        display: block;
+        color: var(--light-color);
+        font-weight: 600;
+    }
+
+    .btn-menu-responsive {
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: transparent;
+        color: var(--light-color);
+        padding: 0.5em 2em;
+        border-style: solid;
+        border-color: var(--light-color);
+        border-radius: 25px;
+    }
+
+
+
+    #btn-mobile {
+        display: flex;
+        align-self: center;
+        margin-right: 50px;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        color: var(--light-color);
+    }
+
+    #hamburger {
+        z-index: 1000;
+        border-top: 3px solid;
+        width: 50px;
+    }
+
+    #hamburger::after {
+        content: '';
+        display: block;
+        height: 3px;
+        background: var(--light-color);
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #hamburger::before {
+        content: '';
+        display: block;
+        height: 3px;
+        background: var(--light-color);
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .navbar.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    .navbar.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .navbar.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+/* fim navbar responsive tablets */
+
+/* inicio navbar responsive smartphones */
+
+@media (max-width: 600px) {
+
+    .menu-reponsive {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        padding-top: 50px;
+        top: 50px;
+        right: -50%;
+        text-align: center;
+        background: var(--secundary-color);
+        transition: 0.6s ease-in-out;
+        height: 70px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .active .menu-reponsive {
+        right: 0;
+        align-items: center;
+        text-align: center;
+        height: calc(45vh - 70px);
+        visibility: visible;
+    }
+}
+
+/* fim do navbar responsive smartphones */

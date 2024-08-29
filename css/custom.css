@@ -270,7 +270,7 @@ body {
 .input-group1 input,
 .input-group2 input {
     padding-left: 10px;
-    width: 150px;
+    width: 50%;
     border: solid 1px var(--secundary-color);
     height: 30px;
     border-radius: 5px;

@@ -139,6 +139,12 @@
         width: calc(45% - 20px);
         margin: 100px auto auto auto;
     }
+
+    .card-show-image,
+    .card-download-image,
+    .card-image {
+        height: 315px;
+    }
 }
 /* início footer responsive tablets */
 
@@ -196,18 +202,15 @@
     .card-form,
     .card-regra3 {
         width: 90%;
-        margin: auto auto 50px auto;
+        margin: auto;
+        margin-bottom: 50px;
     }
 
-    .card-show-image {
-        width: 100%;
-        margin: auto auto 50px 60px;
-    }
-
-    .card-download-image,
-    .card-image {
-        width: 100%;
-        margin: auto auto 50px 60px;
+    .card-show-image, .card-download-image,
+    .card-image{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
     }
 }
 

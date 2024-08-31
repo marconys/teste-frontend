@@ -105,7 +105,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: auto;
 }
 
 /* fim rows-cards */
@@ -194,7 +194,7 @@ body {
 /* inicio card-form */
 .card-form {
     width: calc(30% - 100px);
-    margin: 100px auto auto auto;
+    margin-top: 100px;
     padding: 20px 30px 10px 10px;
     display: flex;
     flex-direction: column;

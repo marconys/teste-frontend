@@ -115,6 +115,7 @@ body {
     width: calc(30% - 20px);
     margin-top: 100px;
     margin-left: 50px;
+    margin-bottom: 50px;
     padding: 10px 80px 10px 10px;
     border: solid 1px var(--main-color);
     border-radius: 10px;
@@ -195,6 +196,7 @@ body {
 .card-form {
     width: calc(30% - 20px);
     margin-top: 100px;
+    margin-bottom: 50px;
     padding: 20px 30px 10px 10px;
     display: flex;
     flex-direction: column;
@@ -241,6 +243,7 @@ body {
     width: calc(30% - 20px);
     margin-top: 100px;
     margin-right: 50px;
+    margin-bottom: 50px;
     padding: 20px 10px 10px 10px;
     display: flex;
     flex-direction: column;

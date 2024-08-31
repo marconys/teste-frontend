@@ -139,12 +139,6 @@
         width: calc(45% - 20px);
         margin: 100px auto auto auto;
     }
-
-    .card-show-image,
-    .card-download-image,
-    .card-image {
-        height: 315px;
-    }
 }
 /* início footer responsive tablets */
 
